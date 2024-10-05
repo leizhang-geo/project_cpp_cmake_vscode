@@ -1,0 +1,8 @@
+D:/OneDrive/develop/project_cpp_cmake_vscode/project_cpp_win/build/CMakeFiles/edit_cache.dir
+D:/OneDrive/develop/project_cpp_cmake_vscode/project_cpp_win/build/CMakeFiles/rebuild_cache.dir
+D:/OneDrive/develop/project_cpp_cmake_vscode/project_cpp_win/build/lib/CMakeFiles/core.dir
+D:/OneDrive/develop/project_cpp_cmake_vscode/project_cpp_win/build/lib/CMakeFiles/edit_cache.dir
+D:/OneDrive/develop/project_cpp_cmake_vscode/project_cpp_win/build/lib/CMakeFiles/rebuild_cache.dir
+D:/OneDrive/develop/project_cpp_cmake_vscode/project_cpp_win/build/src/CMakeFiles/run.dir
+D:/OneDrive/develop/project_cpp_cmake_vscode/project_cpp_win/build/src/CMakeFiles/edit_cache.dir
+D:/OneDrive/develop/project_cpp_cmake_vscode/project_cpp_win/build/src/CMakeFiles/rebuild_cache.dir
