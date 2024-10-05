@@ -92,7 +92,7 @@ make
 
 ```shell
 cp ./lib/*.dll ./bin/   # windows
-cp ./lib/*.so ./bin/    # linux/mac
+cp ./lib/*.so or *.dylib or *.a ./bin/    # linux/mac, but no needed
 ```
 
 ```shell
