@@ -7,9 +7,9 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    Swap swap(10, 20);
-
     cout << "Hello World!" << endl;
+
+    Swap swap(10, 20);
 
     std::cout << "Before swap: " << std::endl;
     swap.PrintInfo();
