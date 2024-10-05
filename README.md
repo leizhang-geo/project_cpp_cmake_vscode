@@ -28,6 +28,37 @@ This a repository for storing demo codes of how to use cmake to build a C++ proj
     pacman -Sl | grep gcc-fortran -> pacman -S mingw-w64-ucrt-x86_64-gcc-fortran
     ```
 
+#### Mac
+- Install -> **Homebrew** [https://brew.sh](https://brew.sh)
+    ```shell
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+- Install **gcc** -> [https://formulae.brew.sh/formula/gcc](https://formulae.brew.sh/formula/gcc)
+    ```shell
+    brew install gcc
+    ```
+- Check gcc, g++, etc. files in the folder: `/opt/homebrew/Cellar/gcc/14.2.0/bin/gcc-14`
+
+- Set aliases for gcc installed by brew. Copy the following codes into `~/.bash_profile` (the directory of gcc may be different from here):
+    ```
+    alias gcc='/opt/homebrew/Cellar/gcc/14.2.0/bin/gcc-14'
+    alias cc='/opt/homebrew/Cellar/gcc/14.2.0/bin/gcc-14'
+    alias g++='/opt/homebrew/Cellar/gcc/14.2.0/bin/g++-14'
+    alias c++='/opt/homebrew/Cellar/gcc/14.2.0/bin/c++-14'
+    alias gfortran='/opt/homebrew/Cellar/gcc/14.2.0/bin/gfortran-14'
+    alias ld=/opt/homebrew/Cellar/gcc/14.2.0/bin/gcc-14
+    alias cpp=/opt/homebrew/Cellar/gcc/14.2.0/bin/cpp-14
+    ```
+
+    And also adding the following codes maybe helpful:
+    ```
+    export CC=/opt/homebrew/Cellar/gcc/14.2.0/bin/gcc-14
+    export CXX=/opt/homebrew/Cellar/gcc/14.2.0/bin/g++-14
+    export CPP=/opt/homebrew/Cellar/gcc/14.2.0/bin/cpp-14
+    export LD=/opt/homebrew/Cellar/gcc/14.2.0/bin/gcc-14
+    ```
+
 ### Build the project
 
 #### Option 1

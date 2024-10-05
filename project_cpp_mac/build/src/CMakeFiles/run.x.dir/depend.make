@@ -1,2 +1,2 @@
-# Empty dependencies file for main_cmake.
+# Empty dependencies file for run.x.
 # This may be replaced when dependencies are built.

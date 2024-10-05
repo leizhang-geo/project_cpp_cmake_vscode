@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build/CMakeFiles /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build/CMakeFiles /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build/src//CMakeFiles/progress.marks
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named core
+# Convenience name for target.
+src/CMakeFiles/run.x.dir/rule:
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/run.x.dir/rule
+.PHONY : src/CMakeFiles/run.x.dir/rule
 
-# Build rule for target.
-core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core
-.PHONY : core
-
-# fast build rule for target.
-core/fast:
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/core.dir/build.make lib/CMakeFiles/core.dir/build
-.PHONY : core/fast
-
-#=============================================================================
-# Target rules for targets named run.x
-
-# Build rule for target.
-run.x: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run.x
+# Convenience name for target.
+run.x: src/CMakeFiles/run.x.dir/rule
 .PHONY : run.x
 
 # fast build rule for target.
 run.x/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/run.x.dir/build.make src/CMakeFiles/run.x.dir/build
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/run.x.dir/build.make src/CMakeFiles/run.x.dir/build
 .PHONY : run.x/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/run.x.dir/build.make src/CMakeFiles/run.x.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/run.x.dir/build.make src/CMakeFiles/run.x.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/run.x.dir/build.make src/CMakeFiles/run.x.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -150,8 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... core"
 	@echo "... run.x"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

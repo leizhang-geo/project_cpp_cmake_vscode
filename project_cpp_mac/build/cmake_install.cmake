@@ -1,4 +1,4 @@
-# Install script for directory: /Users/leizhang/Library/CloudStorage/OneDrive-Personal/Research/_tmp/20240930/project_cpp
+# Install script for directory: /Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,6 +37,13 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build/lib/cmake_install.cmake")
+  include("/Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build/src/cmake_install.cmake")
+
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_COMPONENT MATCHES "^[a-zA-Z0-9_.+-]+$")
     set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
@@ -52,6 +59,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/Users/leizhang/Library/CloudStorage/OneDrive-Personal/Research/_tmp/20240930/project_cpp/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/leizhang/Library/CloudStorage/OneDrive-Personal/develop/project_cpp_cmake_vscode/project_cpp_mac/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

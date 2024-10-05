@@ -5,7 +5,7 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/main_cmake",
+            "program": "${workspaceFolder}/build/bin/run.x",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
