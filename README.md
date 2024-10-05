@@ -59,6 +59,11 @@ This a repository for storing demo codes of how to use cmake to build a C++ proj
     export LD=/opt/homebrew/Cellar/gcc/14.2.0/bin/gcc-14
     ```
 
+Now try to check the version of **gcc**:
+```shell
+gcc --version
+```
+
 ### Build the project
 
 #### Option 1
