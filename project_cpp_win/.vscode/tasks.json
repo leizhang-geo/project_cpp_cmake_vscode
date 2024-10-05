@@ -25,11 +25,40 @@
         },
 
         {
+            "type": "shell",
+            "label": "copy_lib",
+            "group": {
+                "kind": "none",
+                "isDefault": true
+            },
+            "command": "cp",
+            "args": [
+                "./lib/lib*.dll",
+                "./bin/"
+            ]
+        },
+
+        {
+            "type": "shell",
+            "label": "print_show",
+            "group": {
+                "kind": "none",
+                "isDefault": true
+            },
+            "command": "echo",
+            "args": [
+                "MAKE FINISH!"
+            ]
+        },
+
+        {
             "label": "build_make",
             "dependsOrder": "sequence",
             "dependsOn": [
                 "cmake",
-                "make"
+                "make",
+                "copy_lib",
+                "print_show"
             ]
         },
     ],
