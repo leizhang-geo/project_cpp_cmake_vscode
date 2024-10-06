@@ -2,7 +2,7 @@
 
 This a repository for storing demo codes of how to use cmake to build a C++ project in Visual Studio Code platform.
 
-## How to start
+## Getting started
 
 ### Configure the environment
 #### Windows
