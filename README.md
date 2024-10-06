@@ -22,11 +22,18 @@ This a repository for storing demo codes of how to use cmake to build a C++ proj
     ```shell
     pacman -Sl | grep cmake -> pacman -S mingw-w64-ucrt-x86_64-cmake
     ```
+    CMake learning resources:
+    - [https://cliutils.gitlab.io/modern-cmake](https://cliutils.gitlab.io/modern-cmake)
+    - [https://www.bookstack.cn/read/CMake-Cookbook](https://www.bookstack.cn/read/CMake-Cookbook)
 
 - Install **gfortran** (optional) -> [https://gcc.gnu.org/wiki/GFortran](https://gcc.gnu.org/wiki/GFortran):
     ```shell
     pacman -Sl | grep gcc-fortran -> pacman -S mingw-w64-ucrt-x86_64-gcc-fortran
     ```
+    Fortran learning resources:
+    - [https://web.stanford.edu/class/me200c/tutorial_77](https://web.stanford.edu/class/me200c/tutorial_77)
+    - [https://fortran-lang.org/learn](https://fortran-lang.org/learn)
+    - [https://fortran-fans.github.io/Fortran-in-Action](https://fortran-fans.github.io/Fortran-in-Action)
 
 #### Mac
 - Install -> **Homebrew** [https://brew.sh](https://brew.sh)
